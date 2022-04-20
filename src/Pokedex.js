@@ -1,13 +1,14 @@
 import Pokecard from "./Pokecard";
 import pokeList from "./pokeList";
+import "./styles/Pokedex.css";
 const pokeApi =
   "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 
 const Pokedex = props => {
   return (
-    <div class="Pokedex">
+    <div className="Pokedex">
       <h1>Pokedex</h1>
-      <div class="Pokedex-cards">
+      <div className="Pokedex-card">
         {pokeList.map(p => {
           return (
             <Pokecard

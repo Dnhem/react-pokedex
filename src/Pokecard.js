@@ -1,10 +1,12 @@
+import "./styles/Pokecard.css";
+
 const Pokecard = props => {
   return (
-    <div>
+    <div className="Pokecard-card">
       <div>{props.name}</div>
       <img src={props.img} />
-      <div>{props.type}</div>
-      <div>{props.exp}</div>
+      <div>Type: {props.type}</div>
+      <div>Exp: {props.exp}</div>
     </div>
   );
 };
